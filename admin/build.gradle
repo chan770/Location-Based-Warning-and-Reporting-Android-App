@@ -26,3 +26,13 @@ allprojects {
 task clean(type: Delete) {
     delete rootProject.buildDir
 }
+plugins {
+  id "org.sonarqube" version "5.0.0.4638"
+}
+
+sonar {
+  properties {
+    property "sonar.projectKey", "chan770_Location-Based-Warning-and-Reporting-Android-App_05cfcc42-93b3-4369-b468-009619cf9f70"
+    property "sonar.projectName", "Location-Based-Warning-and-Reporting-Android-App"
+  }
+}
